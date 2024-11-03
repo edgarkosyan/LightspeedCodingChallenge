@@ -42,6 +42,7 @@ final class ProductsListViewModel: ObservableObject {
     
     // Handle refresh action
     func onRefresh() async {
+        isPaginationCompleted = false
         page = 0
         
         cancelCurrentTask()
